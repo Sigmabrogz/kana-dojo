@@ -13,6 +13,7 @@ import {
   Activity,
 } from 'lucide-react';
 import { cn } from '@/shared/lib/utils';
+import { useClick } from '@/shared/hooks/useAudio';
 
 interface ClassicSessionSummaryProps {
   title?: string;
@@ -46,6 +47,7 @@ export default function ClassicSessionSummary({
   onBackToSelection,
   onNewSession,
 }: ClassicSessionSummaryProps) {
+  const { playClick } = useClick();
   const total = correct + wrong;
   const accuracy = total > 0 ? Math.round((correct / total) * 100) : 0;
   const timeFormatted = formatTime(totalTimeMs);
@@ -228,20 +230,29 @@ export default function ClassicSessionSummary({
         {/* Action Buttons */}
         <div className='sticky bottom-0 z-10 -mx-4 mt-auto flex w-[calc(100%+2rem)] items-center justify-center gap-3 bg-(--background-color) px-4 pt-4 pb-8 select-none sm:static sm:mx-0 sm:w-full sm:justify-start sm:gap-5 sm:bg-transparent sm:px-0 sm:pt-0 sm:pb-0'>
           <button
-            onClick={onBackToSelection}
-            className='flex h-14 flex-1 cursor-pointer items-center justify-center gap-3 rounded-xl bg-(--secondary-color) px-4 text-lg font-bold text-(--background-color) lowercase outline-hidden transition-all duration-150 active:scale-95 active:brightness-95 sm:px-10 sm:text-xl md:flex-none'
+            onClick={() => {
+              playClick();
+              onBackToSelection();
+            }}
+            className='group flex h-14 flex-1 cursor-pointer items-center justify-center gap-3 rounded-xl bg-(--secondary-color) px-4 text-lg font-bold text-(--background-color) lowercase outline-hidden transition-all duration-150 active:scale-95 active:brightness-95 sm:px-10 sm:text-xl md:flex-none'
           >
             <CircleArrowLeft
-              className='h-5 w-5 sm:h-6 sm:w-6'
+              className='h-5 w-5 group-hover:animate-pulse sm:h-6 sm:w-6'
               strokeWidth={2.5}
             />
             <span className='leading-none'>menu</span>
           </button>
           <button
-            onClick={onNewSession}
-            className='flex h-14 flex-1 cursor-pointer items-center justify-center gap-3 rounded-xl bg-(--main-color) px-4 text-lg font-bold text-(--background-color) lowercase outline-hidden transition-all duration-150 active:scale-95 active:brightness-95 sm:px-12 sm:text-xl md:flex-none'
+            onClick={() => {
+              playClick();
+              onNewSession();
+            }}
+            className='group flex h-14 flex-1 cursor-pointer items-center justify-center gap-3 rounded-xl bg-(--main-color) px-4 text-lg font-bold text-(--background-color) lowercase outline-hidden transition-all duration-150 active:scale-95 active:brightness-95 sm:px-12 sm:text-xl md:flex-none'
           >
-            <RotateCcw className='h-5 w-5 sm:h-6 sm:w-6' strokeWidth={2.5} />
+            <RotateCcw
+              className='h-5 w-5 group-hover:animate-pulse sm:h-6 sm:w-6'
+              strokeWidth={2.5}
+            />
             <span className='leading-none sm:hidden'>new</span>
             <span className='hidden leading-none sm:inline'>new session</span>
           </button>
