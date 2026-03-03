@@ -132,7 +132,7 @@
     "example": "彼はチームのナンバー1だ。",
     "id": 15,
     "issued": false,
-    "completed": false
+    "completed": true
   },
   {
     "termA": "ハイテンション (haitenshon)",
@@ -141,7 +141,7 @@
     "example": "試合前はみんなハイテンションだった。",
     "id": 16,
     "issued": false,
-    "completed": false
+    "completed": true
   },
   {
     "termA": "イメージ (imeeji)",
@@ -203,7 +203,7 @@
     "explanation": "コンセント means electrical outlet. (Set 2)",
     "example": "コンセントが足りないので延長コードを使います。",
     "id": 23,
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
