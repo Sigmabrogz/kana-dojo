@@ -848,7 +848,7 @@
     "region": "Kansai",
     "note": "Example: 食べへん = 食べない。 (Set 5)",
     "id": 85,
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
