@@ -652,8 +652,10 @@
     "backgroundColor": "oklch(25.0% 0.022 210.0 / 1)",
     "mainColor": "oklch(85.0% 0.085 215.0 / 1)",
     "secondaryColor": "oklch(70.0% 0.065 195.0 / 1)",
-    "issued": true,
-    "completed": false
+    "issued": false,
+    "completed": true,
+    "completedBy": "ajinesh703",
+    "completedPR": 9001
   },
   {
     "id": "tanuki-mischief",
@@ -854,8 +856,10 @@
     "backgroundColor": "oklch(14.0% 0.058 290.0 / 1)",
     "mainColor": "oklch(88.0% 0.195 95.0 / 1)",
     "secondaryColor": "oklch(75.0% 0.180 275.0 / 1)",
-    "issued": true,
-    "completed": false
+    "issued": false,
+    "completed": true,
+    "completedBy": "vijayanandana25",
+    "completedPR": 8987
   },
   {
     "id": "wind-god",
@@ -1244,7 +1248,7 @@
     "backgroundColor": "oklch(14.0% 0.010 270.0 / 1)",
     "mainColor": "oklch(72.0% 0.055 200.0 / 1)",
     "secondaryColor": "oklch(62.0% 0.095 320.0 / 1)",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -1462,7 +1466,7 @@
     "backgroundColor": "oklch(16.0% 0.030 260.0 / 1)",
     "mainColor": "oklch(82.0% 0.085 220.0 / 1)",
     "secondaryColor": "oklch(70.0% 0.145 330.0 / 1)",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -1482,8 +1486,10 @@
     "backgroundColor": "oklch(21.0% 0.030 45.0 / 1)",
     "mainColor": "oklch(75.0% 0.155 55.0 / 1)",
     "secondaryColor": "oklch(82.0% 0.135 95.0 / 1)",
-    "issued": true,
-    "completed": false
+    "issued": false,
+    "completed": true,
+    "completedBy": "faridakhaled05",
+    "completedPR": 8958
   },
   {
     "id": "riverstone-gray",
@@ -1502,7 +1508,7 @@
     "backgroundColor": "oklch(21.0% 0.020 200.0 / 1)",
     "mainColor": "oklch(78.0% 0.085 195.0 / 1)",
     "secondaryColor": "oklch(65.0% 0.045 230.0 / 1)",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
